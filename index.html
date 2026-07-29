@@ -5,30 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب التهاني للإلكترونيات</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             background-color: #0d0d0d;
             color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 15px;
+            padding: 0;
             margin: 0;
         }
-        .container {
-            max-width: 480px;
-            margin: 0 auto;
-        }
-        .main-img {
+        /* جعل الصورة تأخذ عرض الشاشة بالكامل */
+        .hero-img {
             width: 100%;
-            max-height: 200px;
-            object-fit: contain;
-            border-radius: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #222;
+            max-height: 350px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 2px solid #d4af37;
+        }
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 15px;
         }
         h1 {
             color: #d4af37;
-            font-size: 22px;
-            margin: 8px 0;
+            font-size: 24px;
+            margin: 10px 0 5px 0;
         }
         p.subtitle {
             color: #aaa;
@@ -73,10 +77,10 @@
 </head>
 <body>
 
+    <!-- صورة العرض العريضة بحجم الشاشة -->
+    <img src="1000185437.jpg" alt="مكتب التهاني للإلكترونيات" class="hero-img">
+
     <div class="container">
-        <!-- صورتك الرسمية -->
-        <img src="1000185437.jpg" alt="مكتب التهاني للإلكترونيات" class="main-img">
-        
         <h1>مكتب التهاني للإلكترونيات</h1>
         <p class="subtitle">صيانة وبرمجة اللابتوبات وأجهزة الألعاب - الموصل</p>
 
@@ -84,7 +88,7 @@
             <!-- زر الاتصال -->
             <a href="tel:07705255538" class="btn btn-call">📞 اتصل بالمكتب: 07705255538</a>
             
-            <!-- زر موقع التهكير (مضمون ولا يتوقف) -->
+            <!-- زر سيرفر التهكير المباشر -->
             <a href="https://wolf218.ir/" target="_blank" class="btn btn-host">🚀 اضغط هنا لفتح موقع تهكير PS4</a>
         </div>
 
