@@ -5,32 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مكتب التهاني للإلكترونيات</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             background-color: #0d0d0d;
             color: #ffffff;
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 15px;
+            padding: 15px 10px;
             margin: 0;
         }
         .container {
-            max-width: 480px;
+            max-width: 500px;
             margin: 0 auto;
+            background: #141414;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid #222;
         }
-        /* التنسيق الصحيح المضمون للصورة */
         .main-img {
             width: 100%;
             height: auto;
             max-height: 250px;
-            object-fit: contain;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            border-radius: 8px;
+            margin-bottom: 15px;
             border: 1px solid #333;
+            display: block;
         }
         h1 {
             color: #d4af37;
             font-size: 22px;
-            margin: 10px 0 5px 0;
+            margin: 0 0 8px 0;
         }
         p.subtitle {
             color: #aaa;
@@ -42,6 +48,7 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+            margin-bottom: 20px;
         }
         .btn {
             display: block;
@@ -56,27 +63,31 @@
             color: #fff;
         }
         .btn-host {
-            background-color: #e67e22;
+            background-color: #0078d4;
             color: #fff;
-            border: 2px solid #f39c12;
+            border: 1px solid #005a9e;
         }
-        .terminal {
+        /* نافذة مدمجة لفتح سيرفر ZEKOxao مباشرة داخل الموقع */
+        .host-frame-container {
+            width: 100%;
+            height: 400px;
+            border: 2px solid #333;
+            border-radius: 10px;
             background: #000;
-            color: #00ff00;
-            padding: 12px;
-            border-radius: 8px;
-            margin-top: 25px;
-            text-align: left;
-            font-family: monospace;
-            font-size: 13px;
-            border: 1px solid #222;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- اسم الصورة المرفوعة عندك والتي ظهرت بنجاح -->
+        <!-- صورة المكتب -->
         <img src="1000185437.jpg" alt="مكتب التهاني للإلكترونيات" class="main-img">
         
         <h1>مكتب التهاني للإلكترونيات</h1>
@@ -86,12 +97,13 @@
             <!-- زر الاتصال -->
             <a href="tel:07705255538" class="btn btn-call">📞 اتصل بالمكتب: 07705255538</a>
             
-            <!-- زر موقع التهكير المباشر والمضمون -->
-            <a href="https://wolf218.ir/" target="_blank" class="btn btn-host">🚀 اضغط هنا لفتح موقع تهكير PS4</a>
+            <!-- زر فتح موقع ZEKOxao بنافذة خارجية مجاورة -->
+            <a href="https://zekoxao.github.io/" target="_blank" class="btn btn-host">🚀 فتح سيرفر ZEKOxao بصفحة مستقلة</a>
         </div>
 
-        <div class="terminal">
-            ...PPPwn / GoldHEN Ready
+        <!-- شاشة مدمجة لسيرفر ZEKOxao تعمل مباشرة بالأسفل -->
+        <div class="host-frame-container">
+            <iframe src="https://zekoxao.github.io/" title="ZEKOxao Host"></iframe>
         </div>
     </div>
 
