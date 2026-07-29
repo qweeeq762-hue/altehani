@@ -19,9 +19,20 @@
         }
         .main-img {
             width: 100%;
+            max-height: 250px;
+            object-fit: cover;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
             border: 1px solid #222;
+        }
+        .placeholder-box {
+            background: linear-gradient(135deg, #1e1e1e, #111);
+            border: 2px dashed #d4af37;
+            padding: 30px 15px;
+            border-radius: 12px;
+            color: #d4af37;
+            font-size: 18px;
+            font-weight: bold;
         }
         h1 {
             color: #d4af37;
@@ -76,8 +87,8 @@
 <body>
 
     <div class="container">
-        <!-- رابط مباشر ورسمي للشعار -->
-        <img src="https://i.ibb.co/L8vYqf0/logo.jpg" alt="مكتب التهاني للإلكترونيات" class="main-img" onerror="this.src='https://dummyimage.com/600x300/111/d4af37.png&text=مكتب+التهاني+للإلكترونيات'">
+        <!-- محاولة عرض الصورة المرفوعة وإذا لم تظهر يعرض مربع أنيق باسم المكتب -->
+        <img src="logo.jpg" alt="مكتب التهاني للإلكترونيات" class="main-img" onerror="this.outerHTML='<div class=\"placeholder-box\">🖥️ مكتب التهاني للإلكترونيات 🎮<br><span style=\"font-size:12px; color:#aaa;\">الموصل - صيانة وبرمجة</span></div>';">
         
         <h1>مكتب التهاني للإلكترونيات</h1>
         <p class="subtitle">صيانة وبرمجة اللابتوبات وأجهزة الألعاب (الموصل)</p>
